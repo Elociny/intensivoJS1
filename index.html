@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intensivão JavaScript | Áudio Book</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/style/style.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-aplicativo">
+            <img class="imagemLivro" src="./src/img/dom-casmurro.jpeg"
+                alt="Uma pintura de um homem e uma mulher se beijando em um estilo de pintura clássica">
+
+            <div id="informacoes-faixa">
+                <p id="capitulo"> Capítulo 1</p>
+                <p id="nome-autor">Machado de Assis</p>
+            </div>
+
+            <audio id="audio-capitulo" src="./books/dom-casmurro/1.mp3"></audio>
+
+            <div id="container-botoes">
+                <button id="anterior" class="bi bi-skip-backward-circle"></button>
+                <button id="play-pause" class="bi bi-play-circle"></button>
+                <button id="proximo" class="bi bi-skip-forward-circle"></button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodaPe">
+        <p>Desenvolvido por Nicole | Intensivão JavaScript</p>
+
+        <div class="redesSociais">
+            <a href="https://www.linkedin.com/in/nicolelinscoelho" target="_blank" class="rede">
+                <img src="./src/img/linkedin.svg" alt="Logo do LinkedIn">
+                <p>LinkedIn</p>
+            </a>
+
+            <a href="https://github.com/Elociny" target="_blank" class="rede">
+                <img src="./src/img/github.svg" alt="Logo do GitHub">
+                <p>GitHub</p>
+            </a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+/* FONTEs */
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* FONTE */
+  --fonte-inter: 'Inter', sans-serif;
+  --fonte-girassol: 'Girassol', serif;
+
+  /* PALETA DARK MODE */
+  --roxo-saturado: #413040;
+  --roxo-saturado-claro: #6c6368;
+  --amarelo-saturado: #b9a173;
+  --laranja-saturado: #eaa353;
+  --bege: #ffefa9;
+
+  /* PALETA LIGHT MODE */
+  --azul-pastel: #c1ddc7;
+  --bege-pastel: #f5e8c6;
+  --verde-pastel: #bbcd77;
+  --vermelho-pastel: #dc8051;
+  --amarelo-pastel: #f4d279;
+
+  --azul-pastel-opacidade: #c1ddc777;
+  --bege-pastel-opacidade: #f5e8c686;
+  --verde-pastel-opacidade: #bacd7777;
+  --vermelho-pastel-opacidade: #dc7f5180;
+  --amarelo-pastel-opacidade: #f4d1797a;
+}
+
+/* RESET CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background: linear-gradient(to bottom, var(--azul-pastel), var(--bege-pastel));
+}
+
+.container-aplicativo {
+  border-radius: 1rem;
+
+  color: var(--roxo-saturado);
+
+  background-color: var(--azul-pastel);
+
+  padding: 1rem 0;
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0px 15px 20px 5px var(--amarelo-saturado);
+  /* box-shadow: [deslocamento horizontal] [deslocamento vertical] [raio de desfoque] [raio de expansão] [cor]; */
+}
+
+.imagemLivro {
+  border-radius: .3rem;
+}
+
+#informacoes-faixa {
+  padding-top: 1rem;
+}
+
+#informacoes-faixa p {
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--fonte-girassol);
+}
+
+#container-botoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container-botoes button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+#play-pause {
+  font-size: 5rem;
+
+}
+
+#anterior,
+#proximo {
+  font-size: 3rem;
+}
+
+/* RODA PÉ */
+
+.rodaPe {
+  padding: 55px 84px 25px 84px;
+
+  background-color: var(--roxo-saturado);
+
+  color: var(--bege-pastel);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: var(--fonte-inter);
+}
+
+.redesSociais {
+  display: flex;
+  gap: 20px;
+}
+
+.rede {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid var(--bege-pastel);
+  border-radius: 5px;
+
+  padding: 7px;
+
+  transition: .5s;
+}
+
+.rede:hover {
+  background-color: var(--roxo-saturado-claro);
+}
+
+.rede img {
+  width: 40px;
+}
+
+a {
+  color: var(--bege-pastel);
+  text-decoration: none;
+}
+
+/* RESPOSNSIVIDADE */
+
+/* @media (min-width:561px) and (max-width: 1115px) {
+  .container-aplicativo {
+    width: 60%;
+  }
+} */
+
+@media (max-width: 650px) {
+  /* MAIN */
+  .container-aplicativo {
+    width: 90vw;
+  }
+
+  /* RODA PÉ */
+  .rodaPe {
+    text-align: center;
+  }
+
+  .rodaPe,
+  .redesSociais {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--bege-pastel);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--bege-pastel);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--roxo-saturado);
+}
