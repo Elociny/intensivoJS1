@@ -2,7 +2,7 @@
  
 # Áudio Book | Hashtag 🌐
 
-`Staus: Em desenvolvimento ⚠️`
+`Staus: Finalizado ✅`
 
 </div>
 
